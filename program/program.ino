@@ -115,7 +115,6 @@ unsigned long time;
 /* MAIN PROGRAM */
 void setup()
 {
-  /* SERIAL BREAKS PIN 0 AND 1 */
   time = millis();
   if(SerialEnabled)
   {
