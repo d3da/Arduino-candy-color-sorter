@@ -1,6 +1,7 @@
 /*  
- *   Arduino M&M's Sorter
+ *   Arduino m&m's Sorter
  *   by Daan Dieperink and Joachim van der Lei
+ *   As part of our PWS Design Paper
  *   2016
  */
 
@@ -163,12 +164,11 @@ void loop()
   }
   time = timenow;
   /*
-    0.  bovenste schijf draait 2/3pi
-    1.  scan kleur object
-    2.  bereken kleurgroep
-    3.  draai onderste schijf naar kleurgroep uit 2
-    4.  ga naar stap 0
-    P.S.ontvang ondertussen evt. Serial commando's
+    0.  the upper disc rotates 120degrees
+    1.  color of object is scanned
+    2.  color group is calculated
+    3.  lower disc is rotated to corresponding container
+    4.  receive any Serial commands
   */
 
   //0. Rotate upper disc
@@ -195,8 +195,6 @@ void loop()
     {
       sensorData[rgb] = scanColor(rgb);
     }
-  
-  //If color is white, the disc keeps turning until this is no longer true
   
   bool turnIncomplete = isTurnIncomplete(sensorData);
 
