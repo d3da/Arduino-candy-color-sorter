@@ -482,15 +482,6 @@ void receiveCommands() //reads incoming Serial buffer, and matches with some com
           {
             rrggbb[rgb] = scanColor(rgb);
           }
-          /*
-          delay(200);
-          Serial.print(rrggbb[0]);
-          Serial.print(" ");
-          Serial.print(rrggbb[1]);
-          Serial.print(" ");
-          Serial.print(rrggbb[2]);
-          Serial.println();
-          */
         }
       }
     }
