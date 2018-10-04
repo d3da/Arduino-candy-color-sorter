@@ -1,6 +1,6 @@
 /*  
  *   Arduino m&m's Sorter
- *   by Daan Dieperink and Joachim van der Lei
+ *   by d3da
  *   As part of our PWS Design Paper
  *   2016
  */
